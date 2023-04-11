@@ -6,7 +6,7 @@ test("add numbers", ()=>{
 
 
 test("subtract numbers", ()=>{
-    expect(calculator.add(5,9)).toBe(-4);
+    expect(calculator.subtract(5,9)).toBe(-4);
 });
 
 test("divide numbers", ()=>{
@@ -20,7 +20,7 @@ test("multiply numbers", ()=>{
 
 
 test("Analyze array", ()=>{
-    expect(calculator.analyzeArray([1,8,3,4,2,6])).toBe({
+    expect(calculator.analyzeArray([1,8,3,4,2,6])).toEqual({
         average: 4,
         min: 1,
         max: 8,
