@@ -1,10 +1,10 @@
 import * as strings from "./strings.js";
 
 test("Capitalize empty string", ()=>{
-    expect(strings.Capitalize("")).toBe("");
+    expect(strings.capitalize("")).toBe("");
 });
 test("Capitalize a string", ()=>{
-    expect(strings.Capitalize("asdasd")).toBe("Asdasd");
+    expect(strings.capitalize("asdasd")).toBe("Asdasd");
 });
 
 
@@ -19,9 +19,9 @@ test("reverseString a string", ()=>{
 
 
 test("cypher a normal string", ()=>{
-    expect(strings.reverseString("defend the east wall of the castle")).toBe("efgfoe uif fbtu xbmm pg uif dbtumf");
+    expect(strings.caesarCipher("defend the east wall of the castle", 1)).toBe("efgfoe uif fbtu xbmm pg uif dbtumf");
 });
 
 test("cypher a string with overlapping", ()=>{
-    expect(strings.reverseString("zxcqweasdyui")).toBe("echvbjfxidzn");
+    expect(strings.caesarCipher("zxcqweasdyui",5)).toBe("echvbjfxidzn");
 });
